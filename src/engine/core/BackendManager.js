@@ -1,5 +1,5 @@
 import * as tf from "@tensorflow/tfjs";
-import { logger } from "../utils/Logger.js";
+import { logger } from "../utils/logger.js";
 
 export class BackendManager {
 
