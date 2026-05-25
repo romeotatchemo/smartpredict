@@ -66,3 +66,11 @@ Cache-Control = "public, max-age=31536000, immutable"
 # - Brotli (br) - plus efficace, supporté par tous les navigateurs modernes
 # - Gzip (gz) - fallback pour anciens navigateurs
 # Aucune configuration supplémentaire nécessaire.
+
+[[headers]]
+for = "/*"
+[headers.values]
+Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-eval'; connect-src 'self' https://unpkg.com https://cdn.jsdelivr.net"
+X-Frame-Options = "DENY"
+X-Content-Type-Options = "nosniff"
+Referrer-Policy = "strict-origin-when-cross-origin"
