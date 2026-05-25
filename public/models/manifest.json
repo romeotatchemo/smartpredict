@@ -1,0 +1,51 @@
+{
+  "models": {
+    "churn": {
+      "current": "v1.1.0",
+      "versions": {
+        "v1.1.0": "/models/model.v1.1.0.f16/model.json",
+        "v1.0.0": "/models/model.json"
+      },
+      "fallback": "v1.0.0",
+      "description": "Churn prediction - LSTM-based",
+      "integrity": {
+        "v1.1.0": "66046496755fbd06ac3707f76e94475f074a42f24ab81efa92ef9bd0fa84a9b0",
+        "v1.0.0": "e81cbedb73e21f20c9b39a279aa06df6ee79ab171ff34be75ac714f4c2b365e3"
+      }
+    },
+    "coco-ssd": {
+      "current": "v2.2.2",
+      "versions": {
+        "v2.2.2": "/models/coco-ssd/model.json"
+      },
+      "description": "Object detection - COCO-SSD model",
+      "integrity": {
+        "v2.2.2": "3770b2528339b1e3340cb74360e1e40401816b009779aeb8d0cce3a4353ea3a9"
+      }
+    },
+    "use": {
+      "current":"v1.1.0",
+      "versions": {
+        "v1.1.0": "/models/use/model.json"
+      },
+      "description": "Universal Sentence Encoder - NLP embeddings",
+      "integrity": {
+        "v1.1.0": "507d11df18b070f99e0ad650b9a4e6534a4cfb05040127e8ce579f00c8fa3b53"
+      }
+    },
+    "sentiment": {
+      "current": "v1.0.0",
+      "versions": {
+        "v1.0.0": "/models/sentiment/sentiment.json"
+      },
+      "description": "Sentiment analysis - LSTM-based classifier",
+      "integrity": {
+        "v1.0.0": "150e01c7b34fbd5f69a83e365dceab0453e1ee34249113d5d763ecb7bf0a9ea3"
+      }
+    }
+  },
+  "metadata": {
+    "lastUpdated": "1111-01-11",
+    "deployedBy": "auto"
+  }
+}

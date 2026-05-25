@@ -1,0 +1,171 @@
+/**
+ * Generate sample products for the application
+ */
+
+export const generateDefaultProducts = () => [
+  {
+    id: 1,
+    name: "Churn Predictor Pro",
+    price: 99.99,
+    category: "Analytics",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-adf4e565db18?w=500&h=500&fit=crop",
+    rating: 4.8,
+    reviews: 156,
+    discount: 20,
+    description:
+      "Advanced ML model for predicting customer churn with 95% accuracy",
+    features: [
+      "Real-time predictions",
+      "Multi-task learning",
+      "Custom thresholds",
+    ],
+  },
+  {
+    id: 2,
+    name: "Revenue Optimizer Suite",
+    price: 149.99,
+    category: "Revenue",
+    image:
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=500&fit=crop",
+    rating: 4.6,
+    reviews: 89,
+    discount: 15,
+    description: "Maximize revenue with AI-powered conversion optimization",
+    features: ["A/B testing", "Funnel analysis", "Revenue forecasting"],
+  },
+  {
+    id: 3,
+    name: "Fraud Detection Engine",
+    price: 199.99,
+    category: "Security",
+    image:
+      "https://images.unsplash.com/photo-1516321318423-f06a669e504e?w=500&h=500&fit=crop",
+    rating: 4.9,
+    reviews: 203,
+    discount: 25,
+    description: "Enterprise-grade fraud detection using deep learning",
+    features: ["Real-time monitoring", "Anomaly detection", "Custom rules"],
+  },
+  {
+    id: 4,
+    name: "Customer Insights Platform",
+    price: 129.99,
+    category: "Analytics",
+    image:
+      "https://images.unsplash.com/photo-1551654151-ef5338350da8?w=500&h=500&fit=crop",
+    rating: 4.7,
+    reviews: 134,
+    discount: 10,
+    description: "Deep dive into customer behavior and preferences",
+    features: ["Segmentation", "Lifetime value prediction", "Cohort analysis"],
+  },
+  {
+    id: 5,
+    name: "API Integration Kit",
+    price: 79.99,
+    category: "Developer",
+    image:
+      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=500&fit=crop",
+    rating: 4.5,
+    reviews: 67,
+    discount: 0,
+    description: "Quick integration with REST and GraphQL APIs",
+    features: ["SDK included", "Documentation", "Support"],
+  },
+  {
+    id: 6,
+    name: "Predictive Analytics Dashboard",
+    price: 179.99,
+    category: "Analytics",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=500&fit=crop",
+    rating: 4.8,
+    reviews: 178,
+    discount: 30,
+    description: "Beautiful dashboards with real-time ML insights",
+    features: ["Custom widgets", "Real-time updates", "Export reports"],
+  },
+  {
+    id: 7,
+    name: "Model Training Suite Pro",
+    price: 249.99,
+    category: "ML Training",
+    image:
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500&h=500&fit=crop",
+    rating: 4.9,
+    reviews: 212,
+    discount: 20,
+    description: "Complete toolkit for training custom ML models",
+    features: ["GPU acceleration", "Auto-tuning", "Version control"],
+  },
+  {
+    id: 8,
+    name: "Data Pipeline Manager",
+    price: 139.99,
+    category: "Data Management",
+    image:
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&h=500&fit=crop",
+    rating: 4.6,
+    reviews: 98,
+    discount: 15,
+    description: "Streamline your data workflows with intelligent automation",
+    features: ["ETL automation", "Data validation", "Monitoring"],
+  },
+  {
+    id: 9,
+    name: "Enterprise License (1 year)",
+    price: 1999.99,
+    category: "Enterprise",
+    image:
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=500&fit=crop",
+    rating: 5.0,
+    reviews: 45,
+    discount: 10,
+    description: "Full suite with dedicated support and custom implementations",
+    features: ["Unlimited users", "Priority support", "Custom training"],
+  },
+  {
+    id: 10,
+    name: "Consulting Package (10 hours)",
+    price: 2999.0,
+    category: "Services",
+    image:
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=500&fit=crop",
+    rating: 4.9,
+    reviews: 32,
+    discount: 0,
+    description: "Expert consultation for implementation and optimization",
+    features: ["Expert guidance", "Custom solutions", "Knowledge transfer"],
+  },
+  {
+    id: 11,
+    name: "Performance Optimization Pack",
+    price: 89.99,
+    category: "Performance",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-adf4e565db18?w=500&h=500&fit=crop",
+    rating: 4.7,
+    reviews: 76,
+    discount: 25,
+    description: "Boost your model performance with advanced optimization",
+    features: ["Model compression", "Latency reduction", "Cost optimization"],
+  },
+  {
+    id: 12,
+    name: "Training Data Generator",
+    price: 69.99,
+    category: "Data",
+    image:
+      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=500&fit=crop",
+    rating: 4.6,
+    reviews: 54,
+    discount: 12,
+    description: "Generate high-quality synthetic training data",
+    features: [
+      "Realistic data",
+      "Custom distributions",
+      "Unlimited generation",
+    ],
+  },
+];

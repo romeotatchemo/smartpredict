@@ -1,0 +1,59 @@
+# Configuration Netlify - Build & Deploy
+
+[build]
+command = "npm run build"
+publish = "dist"
+
+# ===== HEADERS - Modèles JSON =====
+# Stratégie: Cache permanent (immutable) pour les fichiers versionnés
+# Le nom du fichier change à chaque nouvelle version
+
+[[headers]]
+for = "/models/**/*.json"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+X-Content-Type-Options = "nosniff"
+X-Frame-Options = "DENY"
+
+# ===== HEADERS - Modèles BIN (poids) =====
+
+[[headers]]
+for = "/models/**/*.bin"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+X-Content-Type-Options = "nosniff"
+
+# ===== HEADERS - Manifest (NO CACHE) =====
+# Stratégie critique: Pas de cache
+# Ce fichier contrôle la version du modèle à charger
+# Il doit TOUJOURS être frais
+
+[[headers]]
+for = "/models/manifest.json"
+[headers.values]
+Cache-Control = "public, max-age=0, must-revalidate"
+X-Content-Type-Options = "nosniff"
+
+# ===== HEADERS - index.html =====
+# Stratégie: Pas de cache
+# Les assets référencés s'auto-versionnent via Vite
+
+[[headers]]
+for = "/index.html"
+[headers.values]
+Cache-Control = "public, max-age=0, must-revalidate"
+
+# ===== HEADERS - Assets Vite =====
+# Stratégie: Cache permanent (hash dans le nom garantit la fraîcheur)
+# Vite génère automatiquement des noms uniques
+
+[[headers]]
+for = "/assets/*"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+# ===== COMPRESSION =====
+# Netlify active automatiquement sur les fichiers texte:
+# - Brotli (br) - plus efficace, supporté par tous les navigateurs modernes
+# - Gzip (gz) - fallback pour anciens navigateurs
+# Aucune configuration supplémentaire nécessaire.

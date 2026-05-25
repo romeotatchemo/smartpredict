@@ -1,0 +1,12 @@
+{
+  "churn": {
+    "medium": 0.65,
+    "high": 0.85
+  },
+  "conversion": {},
+  "abuse": {},
+  "metadata": {
+    "version": "1.0",
+    "lastUpdated": "2000-10-27"
+  }
+}
