@@ -4,6 +4,15 @@
 command = "npm run build"
 publish = "dist"
 
+# ===== REDIRECTS - SPA Routing =====
+# Rediriger toutes les routes non existantes vers index.html
+# React Router gère le routing côté client
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+
 # ===== HEADERS - Modèles JSON =====
 # Stratégie: Cache permanent (immutable) pour les fichiers versionnés
 # Le nom du fichier change à chaque nouvelle version
