@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { logger } from "../../../engine/utils/logger";
+import { logger } from "../../../engine/utils/logger.js";
 
 export const SettingsPage = () => {
   const [settings, setSettings] = useState({

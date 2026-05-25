@@ -13,7 +13,7 @@
 
 import * as tf from '@tensorflow/tfjs';
 import { tensorCache } from "../core/TensorCache";
-import { logger } from "../utils/logger";
+import { logger } from "../utils/logger.js";
 
 /**
  * Classe pour gérer l'historique des mesures

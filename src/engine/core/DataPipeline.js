@@ -1,4 +1,4 @@
-import { logger } from "../utils/logger";
+import { logger } from "../utils/logger.js";
 import { storageManager } from "../data/StorageManager";
 import { dataCleaner } from "../data/DataCleaner";
 import { temporalExtractor } from "../features/TemporalExtractor";

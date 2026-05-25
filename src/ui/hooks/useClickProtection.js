@@ -2,7 +2,7 @@
  * React hook for managing button click protection
  */
 import { useState, useCallback } from "react";
-import { logger } from "../../engine/utils/logger";
+import { logger } from "../../engine/utils/logger.js";
 
 /**
  * Hook to prevent rapid successive clicks (rage-click protection)

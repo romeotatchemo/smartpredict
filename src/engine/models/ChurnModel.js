@@ -1,5 +1,5 @@
 import * as tf from "@tensorflow/tfjs";
-import { logger } from "../utils/logger";
+import { logger } from "../utils/logger.js";
 import { calculateClassWeights } from "../utils/classWeights";
 
 export class ChurnModel {

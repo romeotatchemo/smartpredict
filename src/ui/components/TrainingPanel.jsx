@@ -1,6 +1,6 @@
 import React from "react";
 import { useSmartPredict } from "../hooks/useSmartPredict";
-import { logger } from "../../engine/utils/logger";
+import { logger } from "../../engine/utils/logger.js";
 
 /**
  * Composant d'entraînement du modèle

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { SkeletonLoader } from "../shared/SkeletonLoader";
 import { useVision } from "../../hooks/useVision";
-import { logger } from "../../../engine/utils/logger";
+import { logger } from "../../../engine/utils/logger.js";
 
 export const VisionPage = () => {
   const {

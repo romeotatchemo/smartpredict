@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import * as tf from "@tensorflow/tfjs";
 import { backendManager } from "../../../engine/core/BackendManager";
-import { logger } from "../../../engine/utils/Logger";
+import { logger } from "../../../engine/utils/logger.js";
 import { useBenchmark } from "../../hooks/useBenchmark";
 import { useSmartPredict } from "../../hooks/useSmartPredict";
 import useMLWorker from "../../hooks/useMLWorker";

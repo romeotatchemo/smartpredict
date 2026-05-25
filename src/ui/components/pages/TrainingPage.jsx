@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from "react";
 import { useNavigate } from "react-router";
 import { useSmartPredict } from "../../hooks/useSmartPredict";
-import { logger } from "../../../engine/utils/logger";
+import { logger } from "../../../engine/utils/logger.js";
 
 export const TrainingPage = () => {
   const navigate = useNavigate();

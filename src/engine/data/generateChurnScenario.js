@@ -1,6 +1,6 @@
 import { smartStream } from "../core/StreamManager";
 import { ACTION_TYPES } from "../data/event.schema";
-import { logger } from "../utils/logger";
+import { logger } from "../utils/logger.js";
 
 function wait(ms) {
   return new Promise((res) => setTimeout(res, ms));

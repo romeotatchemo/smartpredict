@@ -3,7 +3,7 @@
  * Appears on first app load if database is empty or doesn't exist
  */
 import React, { useState } from "react";
-import { logger } from "../../../engine/utils/logger";
+import { logger } from "../../../engine/utils/logger.js";
 import indexedDBService from "../../utils/IndexedDBService";
 import { generateDefaultProducts } from "../../../engine/data/generateDefaultProducts";
 

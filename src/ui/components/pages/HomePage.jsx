@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router";
 import { useSmartPredict } from "../../hooks/useSmartPredict";
 import { ProductCard } from "../shared/ProductCard";
-import { logger } from "../../../engine/utils/logger";
+import { logger } from "../../../engine/utils/logger.js";
 
 const FEATURED_PRODUCTS = [
   {

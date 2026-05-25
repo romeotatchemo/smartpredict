@@ -2,7 +2,7 @@
  * Hook for managing products from IndexedDB
  */
 import { useState, useEffect, useCallback } from "react";
-import { logger } from "../../engine/utils/logger";
+import { logger } from "../../engine/utils/logger.js";
 import indexedDBService from "../utils/IndexedDBService";
 
 const attemptLoadProducts = async (

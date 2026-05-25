@@ -56,7 +56,7 @@ import { dataPipeline } from "./DataPipeline";
 import { ActionMapper } from "../decision/ActionMapper";
 import { HybridEngine } from "../decision/HybridEngine";
 import { thresholdManager } from "../decision/ThresholdManager";
-import { logger } from "../utils/logger";
+import { logger } from "../utils/logger.js";
 import { ChurnModel } from "../models/ChurnModel";
 import * as tf from "@tensorflow/tfjs";
 import { generateDataset } from "../data/generateTrainingDataset";

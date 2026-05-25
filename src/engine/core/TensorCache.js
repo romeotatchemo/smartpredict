@@ -15,7 +15,7 @@
  * ⚠️ CRITIQUE : Un cache borné est essentiel. Un cache illimité constituerait
  * une fuite de mémoire en soi — le problème exact que nous cherchons à résoudre.
  */
-import { logger } from "../utils/logger";
+import { logger } from "../utils/logger.js";
 
 export class TensorCache {
   /**

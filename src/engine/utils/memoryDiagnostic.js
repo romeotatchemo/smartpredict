@@ -1,5 +1,5 @@
 import * as tf from "@tensorflow/tfjs";
-import { logger } from "./logger";
+import { logger } from "./logger.js";
 
 export class MemoryDiagnostic {
   static diagnose(label) {

@@ -1,7 +1,7 @@
 import { Outlet } from "react-router";
 import "./App.css";
 import { useState, useEffect } from "react";
-import { logger } from "./engine/utils/Logger";
+import { logger } from "./engine/utils/logger.js";
 import { useViewTracker } from "./ui/hooks/useViewTracker";
 import Header from "./ui/components/shared/Header";
 import { UpdateToast } from "./ui/components/shared/UpdateToast";

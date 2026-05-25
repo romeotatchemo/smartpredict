@@ -1,4 +1,4 @@
-import { logger } from "../engine/utils/logger";
+import { logger } from "../engine/utils/logger.js";
 import { createContext, useEffect, useMemo, useRef, useState } from "react";
 import { pageEncoder } from "../engine/features/CategoricalEncoder";
 import { storageManager } from "../engine/data/StorageManager";

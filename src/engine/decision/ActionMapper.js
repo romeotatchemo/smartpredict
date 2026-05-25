@@ -1,5 +1,5 @@
 import { DECISION_ACTIONS, PRIORITY_LEVELS } from "./ActionEnums";
-import { logger } from "../utils/logger";
+import { logger } from "../utils/logger.js";
 import { thresholdManager } from "./ThresholdManager";
 
 export class ActionMapper {

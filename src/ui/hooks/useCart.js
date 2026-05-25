@@ -2,7 +2,7 @@
  * Hook for managing shopping cart with localStorage
  */
 import { useState, useCallback, useEffect } from "react";
-import { logger } from "../../engine/utils/logger";
+import { logger } from "../../engine/utils/logger.js";
 
 const CART_STORAGE_KEY = "smartstore_cart";
 
