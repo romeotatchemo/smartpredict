@@ -27,11 +27,13 @@ export const SmartPredictProvider = ({ children }) => {
     const initEngine = async () => {
       try {
         logger.info("⏳ REACT CONTEXT: Starting Async Initialization...");
+        await storageManager.init();
+
         initEventTracker();
         trackNavigation(window.location.pathname);
         setIsLoading(false);
         logger.info("✅ REACT CONTEXT: Engine is fully ready.");
-        
+
         ModelRegistry.get("use")
           .then(() => {
             logger.info("✅ USE model loaded and ready");

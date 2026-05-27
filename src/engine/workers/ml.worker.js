@@ -39,6 +39,7 @@ async function initializeWorker() {
     await storageManager.init();
 
     console.log('📦 [ML Worker] Loading churn model...');
+    
     await engine.init();
 
     isReady = true;
